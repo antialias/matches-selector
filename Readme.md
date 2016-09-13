@@ -27,7 +27,3 @@ Tests are run with karma + mocha + webpack. An additional test is performed to e
 npm install
 npm test
 ```
-
-## License
-
-  MIT
