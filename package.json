@@ -22,7 +22,7 @@
     "run-browser": "~1.0.0"
   },
   "dependencies": {
-    "component-query": "*"
+    "component-query": "0.0.3"
   },
   "browser": {
     "query": "component-query"
