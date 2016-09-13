@@ -1,6 +1,6 @@
 {
   "name": "matches-selector-universal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Check if an element matches a given selector",
   "keywords": [
     "match",
