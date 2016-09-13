@@ -1,34 +1,32 @@
-# matches-selector
+# matches-selector-universal
 
-Check if an element matches a given selector.  For use with browserify.
+Check if an element matches a given selector.
 
-[![Dependency Status](https://gemnasium.com/ForbesLindesay/matches-selector.png)](https://gemnasium.com/ForbesLindesay/matches-selector)
-[![NPM version](https://badge.fury.io/js/matches-selector.png)](http://badge.fury.io/js/matches-selector)
+## History
 
-[![browser support](https://ci.testling.com/ForbesLindesay/matches-selector.png)](https://ci.testling.com/ForbesLindesay/matches-selector)
+This package is useful when bundling a library that will be used for universal rendering.
+It was forked from a merge of component-matches-selector and matches-selector. Both packages threw errors when required from an environment that didn't have global DOM objects. matches-selector-universal fixes that, but for obvious reasons, will still throw errors if DOM globals, e.g. `document` and `Element` aren't available.
 
 ## Installation
 
-    $ npm install matches-selector
+    $ npm install matches-selector-universal
 
 ## Example
 
 ```js
-var matches = require('matches-selector');
+var matches = require('matches-selector-universal');
 matches(el, 'ul li a');
 // => true or false
 ```
 
 ## Running Tests
 
-Tests can be easilly run locally in the browser of your choice, and have passed if it ends with `# ok`.  They are also run on testling-ci when pushed to the repository:
+Tests are run with karma + mocha + webpack. An additional test is performed to ensure that the code does not throw errors when required by node with no DOM globals.
 
 ```
 npm install
 npm test
 ```
-
-To re-run tests after making changes, just refresh your browser
 
 ## License
 
