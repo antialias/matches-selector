@@ -13,7 +13,7 @@
     "url": "git://github.com/antialias/universal-matches-selector.git"
   },
   "scripts": {
-    "test": "karma start"
+    "test": "karma start --single-run && mocha"
   },
   "license": "MIT",
   "devDependencies": {
@@ -29,7 +29,8 @@
     "webpack": "^1.13.2"
   },
   "dependencies": {
-    "component-query": "0.0.3"
+    "component-query": "0.0.3",
+    "global-object": "^1.0.0"
   },
   "browser": {
     "query": "component-query"

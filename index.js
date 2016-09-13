@@ -9,7 +9,8 @@ try {
   var query = require('component-query');
 }
 
-var proto = Element.prototype;
+var Element = require('global-object').Element;
+var proto = Element && Element.prototype || {};
 var vendor = proto.matches
   || proto.matchesSelector
   || proto.webkitMatchesSelector
