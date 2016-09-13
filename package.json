@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/antialias/matches-selector-universal.git"
+    "url": "git://github.com/1stdibs/matches-selector-universal.git"
   },
   "scripts": {
     "test": "karma start --single-run && mocha"
@@ -67,7 +67,7 @@
   "bugs": {
     "url": "https://github.com/antialias/matches-selector-universal/issues"
   },
-  "homepage": "https://github.com/antialias/matches-selector-universal#readme",
+  "homepage": "https://github.com/1stdibs/matches-selector-universal#readme",
   "main": "index.js",
   "directories": {
     "test": "test"
