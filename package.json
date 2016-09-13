@@ -1,15 +1,25 @@
 {
-  "name": "component-matches-selector",
-  "version": "0.1.6",
+  "name": "matches-selector-universal",
+  "version": "2.0.0",
   "description": "Check if an element matches a given selector",
   "keywords": [
     "match",
     "element",
+    "CSS",
     "selector"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/component/matches-selector.git"
+    "url": "git://github.com/antialias/universal-matches-selector.git"
+  },
+  "scripts": {
+    "test": "run-browser test/index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "domify": "~1.1.1",
+    "tape": "~2.3.2",
+    "run-browser": "~1.0.0"
   },
   "dependencies": {
     "component-query": "*"
@@ -17,5 +27,41 @@
   "browser": {
     "query": "component-query"
   },
-  "license": "MIT"
+  "testling": {
+    "files": "test/index.js",
+    "browsers": [
+      "iexplore/8.0",
+      "iexplore/10.0",
+      "iexplore/9.0",
+      "chrome/30.0",
+      "chrome/31.0",
+      "chrome/canary",
+      "firefox/4.0",
+      "firefox/10.0",
+      "firefox/15.0",
+      "firefox/20.0",
+      "firefox/21.0",
+      "firefox/22.0",
+      "firefox/23.0",
+      "firefox/24.0",
+      "firefox/25.0",
+      "firefox/nightly",
+      "opera/11.0",
+      "opera/17.0",
+      "opera/next",
+      "safari/5.0.5",
+      "safari/5.1",
+      "safari/6.0",
+      "iphone/6.0",
+      "ipad/6.0"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/antialias/universal-matches-selector/issues"
+  },
+  "homepage": "https://github.com/antialias/universal-matches-selector#readme",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  }
 }
