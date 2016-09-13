@@ -1,5 +1,5 @@
 
-var matches = require('matches-selector')
+var matches = require('..')
   , domify = require('domify');
 
 function assert(expr) {
